@@ -8,13 +8,15 @@
 .home-content h1 {
   padding: 5px;
   padding-top: 80px;
-  margin-left: 120px;
-  
+  /* margin-left: 10px; */
+  margin-right: 1000px;
 }
 .home-content h2 {
   color: #e0b50f;
   padding: 5px;
-  margin-left: 120px;
+  /* margin-left: 120px; */
+  margin-right: 900px;
+ 
 }
 
 .home-buttons {

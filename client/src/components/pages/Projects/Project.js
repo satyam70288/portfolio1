@@ -1,9 +1,10 @@
 import React from "react";
 import "./Project.css";
+import Spin from 'react-reveal/Spin';
 const Projects = () => {
   return (
     <>
-      <div className="continer project">
+      <div className="continer project" id="project">
         <h2 className="col-12 mt-3 mb-1 text-center text-uppercase">
           TOP RECENT PROJECTS
         </h2>
@@ -16,8 +17,10 @@ const Projects = () => {
           voluptate qui et animi doloribus nulla eius molestiae unde tempore ad
         </p>
         {/* card design */}
-        <div className="container main">     <div className="row" id="ads">
+        <div className="container main">  
+        <div className="row" id="ads">
           <div className="col-md-4">
+          <Spin>   
             <div className="card rounded">
               <div className="card-image">
                 <span className="card-notify-badge">Full stack</span>
@@ -46,9 +49,10 @@ const Projects = () => {
                 </a>
               </div>
             </div>
+            </Spin>
           </div>
           <div className="col-md-4">
-            <div className="card rounded">
+            <Spin>           <div className="card rounded">
               <div className="card-image">
                 <span className="card-notify-badge">Mobile App</span>
                 <img
@@ -73,9 +77,11 @@ const Projects = () => {
                 </a>
               </div>
             </div>
+            </Spin>
+ 
           </div>
           <div className="col-md-4">
-            <div className="card rounded">
+            <Spin>          <div className="card rounded">
               <div className="card-image">
                 <span className="card-notify-badge">Backend</span>
                 <img
@@ -98,8 +104,12 @@ const Projects = () => {
                 </a>
               </div>
             </div>
+            </Spin>
+ 
             </div>
           </div>
+          
+
         </div>
       </div>
     </>
